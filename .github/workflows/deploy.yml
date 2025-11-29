@@ -26,7 +26,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8.6.12  # 移除了不支持的cache参数
+          version: 8.6.12
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -34,20 +34,6 @@ jobs:
           node-version: 18
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
-
-      # 添加专门的pnpm缓存步骤
-      - name: Cache pnpm dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        with:
-          enablement: true
 
       - name: Install dependencies
         run: pnpm install
