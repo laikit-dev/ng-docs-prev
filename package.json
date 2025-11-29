@@ -1,0 +1,28 @@
+{
+  "name": "ng-docs-prev",
+  "version": "1.0.0",
+  "description": "新版保存站文档",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laikit-dev/ng-docs-prev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laikit-dev/ng-docs-prev/issues"
+  },
+  "homepage": "https://github.com/laikit-dev/ng-docs-prev#readme",
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.25"
+  }
+}
