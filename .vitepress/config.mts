@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: './ng-docs-prev/',
   title: "LGS NG 帮助中心",
   description: "LGS NG 帮助中心 - 提供全面的使用指南和开发文档",
   lang: 'zh-CN',
