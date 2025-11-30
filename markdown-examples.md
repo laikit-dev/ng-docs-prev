@@ -20,7 +20,7 @@
 <xgplayer url="/testVideoV1.mp4" poster="/homePageBG.png" />
 这是使用 <span class="mark">xgplayer</span> 组件的播放器。
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115630854446818&bvid=BV1bFUoB8E1k&cid=34351811385&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<code><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115630854446818&bvid=BV1bFUoB8E1k&cid=34351811385&p=1&Muted=true&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></code>
 这是 B 站视频嵌入播放器。
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iZ3b305mx00?si=-i7aXu-BC6Mw_KDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
