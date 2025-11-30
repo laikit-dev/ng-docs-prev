@@ -15,13 +15,11 @@ export default defineConfig({
     ["meta", { name: "og:title", content: "LGS NG 帮助中心" }],
     ["meta", { name: "og:site_name", content: "LGS NG 帮助中心" }],
     ["meta", { name: "og:image", content: "https://www.luogu.me/favicon.ico" }],
-    /*
     ['script', { 
             async : '', 
             src : "https://analytics.luogu.me/script.js", 
-            "data-website-id" : "ID???"
+            "data-website-id" : "8033e96b-3f0a-4d7d-aa79-3664083673ed"
          }]
-            */
   ],
    markdown: {
     image: {
