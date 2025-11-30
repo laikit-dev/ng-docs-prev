@@ -11,7 +11,7 @@
 </details>
 
 ## 测试图片
-![测试图片，如果你看到这行文字，说明加载失败了](./public/homePageBg.png)
+![测试图片，如果你看到这行文字，说明加载失败了](/homePageBg.png)
 
 ## 测试视频
 <video src="/testVideoV1.mp4" controls="controls"></video>

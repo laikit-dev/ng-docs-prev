@@ -6,7 +6,7 @@ hero:
   name: "LGS NG 帮助中心"
   text: ""
   image:
-    src: "./public/homePageBg.png"
+    src: "/homePageBg.png"
     alt: 这是一个测试图片。如果你看到这一行文字，说明图片加载失败了。
   tagline: "Save everything, keep it alive."
   actions:
