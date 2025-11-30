@@ -23,6 +23,7 @@
   "devDependencies": {
     "sass": "^1.94.2",
     "vitepress": "^1.6.4",
-    "vue": "^3.5.25"
+    "vue": "^3.5.25",
+    "xgplayer": "^3.0.23"
   }
 }
