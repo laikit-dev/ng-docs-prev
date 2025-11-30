@@ -1,4 +1,4 @@
-name: Deploy VitePress site to Pages
+name: 部署 VitePress 站点到 Pages
 
 on:
   push:
@@ -18,40 +18,40 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 检出代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
+      - name: 设置 pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8.6.12
 
-      - name: Setup Node
+      - name: 设置 Node 环境
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: "pnpm"
           cache-dependency-path: "**/pnpm-lock.yaml"
 
-      - name: Install dependencies
+      - name: 安装依赖
         run: pnpm install
         env:
           NODE_OPTIONS: --max-old-space-size=4096
 
-      - name: Install Videoplayer
+      - name: 安装视频播放器
         run: pnpm add -D xgplayer
 
-      - name: Install vue
+      - name: 安装 vue
         run: pnpm add -D vue
 
-      - name: Build with VitePress
+      - name: 使用 VitePress 构建
         run: |
           pnpm run docs:build
           touch .vitepress/dist/.nojekyll
 
-      - name: Upload artifact
+      - name: 上传构件
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
@@ -62,8 +62,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
+    name: 部署
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 部署到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
