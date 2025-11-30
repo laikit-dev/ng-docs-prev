@@ -16,6 +16,12 @@
 ## 测试视频
 <video src="/testVideoV1.mp4" controls="controls"></video>
 
+这是原生播放器。
+
+<xgplayer url="/testVideoV1.mp4" poster="/homePageBG.png" />
+
+这是使用 <span class="mark">xgplayer</span> 组件的播放器。
+
 ## 测试文段
 <span class="mark">这是一个测试文段，用于展示自定义样式的效果。</span>
 

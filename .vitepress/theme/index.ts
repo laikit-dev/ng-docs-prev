@@ -8,6 +8,8 @@ import './style/custom-block.css'
 import './style/hidden.css'
 import './style/marker.css'
 import './style/sidebarIcons.css'
+// @ts-ignore
+import xgplayer from "./components/xgplayer.vue"
 
 export default {
   extends: DefaultTheme,
@@ -16,7 +18,7 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  enhanceApp({app}) { 
+    app.component('xgplayer' , xgplayer)
   }
 } satisfies Theme

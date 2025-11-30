@@ -40,8 +40,11 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
 
-      - name: Install videoplayer
+      - name: Install Videoplayer
         run: pnpm add -D xgplayer
+
+      - name: Install vue
+        run: pnpm add -D vue
 
       - name: Build with VitePress
         run: |
