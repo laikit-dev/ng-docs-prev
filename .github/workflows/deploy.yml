@@ -35,14 +35,14 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
 
-      - name: Install videoplayer
-        run: pnpm add -D xgplayer
-
       - name: Install dependencies
         run: pnpm install
         env:
           NODE_OPTIONS: --max-old-space-size=4096
 
+      - name: Install videoplayer
+        run: pnpm add -D xgplayer
+        
       - name: Build with VitePress
         run: |
           pnpm run docs:build
