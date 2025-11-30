@@ -15,12 +15,16 @@
 
 ## 测试视频
 <video src="/testVideoV1.mp4" controls="controls"></video>
-
 这是原生播放器。
 
 <xgplayer url="/testVideoV1.mp4" poster="/homePageBG.png" />
-
 这是使用 <span class="mark">xgplayer</span> 组件的播放器。
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115630854446818&bvid=BV1bFUoB8E1k&cid=34351811385&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+这是 B 站视频嵌入播放器。
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iZ3b305mx00?si=-i7aXu-BC6Mw_KDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+这是 YouTube 视频嵌入播放器。
 
 ## 测试文段
 <span class="mark">这是一个测试文段，用于展示自定义样式的效果。</span>
