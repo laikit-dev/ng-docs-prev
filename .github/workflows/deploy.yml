@@ -35,6 +35,12 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: '**/pnpm-lock.yaml'
 
+      - name: Install Vue
+        run: pnpm add -D vue
+
+      - name: Install videoplayer
+        run: pnpm add -D xgplayer
+
       - name: Install dependencies
         run: pnpm install
         env:

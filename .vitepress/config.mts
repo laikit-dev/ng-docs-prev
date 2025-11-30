@@ -11,9 +11,7 @@ export default defineConfig({
   },
   head: [
     ["link", { rel: "icon", href: "https://www.luogu.me/static/self/img/favicon.ico" }],
-    ["meta", { name: "theme-color", content: "#7AD6EF" }],
     ["meta", { name: "og:type", content: "website" }],
-    ["meta", { name: "og:locale", content: "zh-CN" }],
     ["meta", { name: "og:title", content: "LGS NG 帮助中心" }],
     ["meta", { name: "og:site_name", content: "LGS NG 帮助中心" }],
     ["meta", { name: "og:image", content: "https://www.luogu.me/favicon.ico" }],
@@ -21,10 +19,16 @@ export default defineConfig({
     ['script', { 
             async : '', 
             src : "https://analytics.luogu.me/script.js", 
-            "data-website-id" : "32e91990-3c50-4462-8be5-0e6886e6c380"
+            "data-website-id" : "ID???"
          }]
             */
   ],
+   markdown: {
+    image: {
+      lazyLoading: true
+     },
+     toc: {level: [1,2,3,4,5,6]},
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'https://www.luogu.me/static/self/img/favicon.ico',
@@ -86,7 +90,6 @@ export default defineConfig({
         },
       },
     },
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
@@ -97,6 +100,10 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
+    docFooter: { 
+      prev: '上一页', 
+      next: '下一页', 
+    }, 
     footer: {
       message: "基于 AGPL-3.0 协议开源",
       copyright: "© 2025 laikit-dev ",

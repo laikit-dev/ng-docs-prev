@@ -1,12 +1,36 @@
-# Markdown Extension Examples
+# 测试页面
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+## 测试折叠框 & 目录生成
+::: details 目录
+[[toc]]
+:::
 
-## Syntax Highlighting
+<details>
+  <summary>点我展开</summary>
+  Markdown默认折叠语法，Vitepress可以使用容器折叠语法，更加美观
+</details>
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+## 测试图片
+![测试图片，如果你看到这行文字，说明加载失败了](./public/homePageBg.png)
 
-**Input**
+## 测试视频
+<video src="/testVideoV1.mp4" controls="controls"></video>
+
+## 测试文段
+<span class="mark">这是一个测试文段，用于展示自定义样式的效果。</span>
+
+<mark>这是一个测试文段，用于展示自定义样式的效果。</mark>
+
+
+## Markdown 扩展功能示例
+
+> 本文档展示了 VitePress 内置的部分 Markdown 扩展功能。
+
+## 语法高亮
+
+VitePress 基于 [Shiki](https://github.com/shikijs/shiki) 提供语法高亮功能，支持行高亮等增强特性：
+
+**输入**
 
 ````md
 ```js{4}
@@ -20,7 +44,7 @@ export default {
 ```
 ````
 
-**Output**
+**输出**
 
 ```js{4}
 export default {
@@ -32,54 +56,54 @@ export default {
 }
 ```
 
-## Custom Containers
+## 自定义容器
 
-**Input**
+**输入**
 
 ```md
 ::: info
-This is an info box.
+这是一个信息框。
 :::
 
 ::: tip
-This is a tip.
+这是一个提示框。
 :::
 
 ::: warning
-This is a warning.
+这是一个警告框。
 :::
 
 ::: danger
-This is a dangerous warning.
+这是一个危险警告框。
 :::
 
 ::: details
-This is a details block.
+这是一个可展开详情块。
 :::
 ```
 
-**Output**
+**输出**
 
 ::: info
-This is an info box.
+这是一个信息框。
 :::
 
 ::: tip
-This is a tip.
+这是一个提示框。
 :::
 
 ::: warning
-This is a warning.
+这是一个警告框。
 :::
 
 ::: danger
-This is a dangerous warning.
+这是一个危险警告框。
 :::
 
 ::: details
-This is a details block.
+这是一个可展开详情块。
 :::
 
-## More
+## 更多功能
 
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+查看 [完整 Markdown 扩展列表](https://vitepress.dev/guide/markdown) 文档了解更多细节。

@@ -3,7 +3,11 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import './index.css'
+import './style/var.css'
+import './style/custom-block.css'
+import './style/hidden.css'
+import './style/marker.css'
+import './style/sidebarIcons.css'
 
 export default {
   extends: DefaultTheme,
