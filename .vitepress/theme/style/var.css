@@ -20,6 +20,14 @@
   --vp-home-hero-image-filter: blur(40px);
 }
 
+.VPFeatures .items .item {
+  transition: transform 0.3s;
+}
+
+.VPFeatures .items .item:hover {
+  transform: translateY(-5px);
+}
+
 .vp-doc a {
   text-decoration: none;
 }
