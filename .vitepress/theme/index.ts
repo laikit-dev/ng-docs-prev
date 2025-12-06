@@ -26,8 +26,8 @@ export default {
       repoId: 'R_kgDOQfDGWA', //仓库ID
       category: 'Polls', // 讨论分类
       categoryId: 'DIC_kwDOQfDGWM4CzeFq', //讨论分类ID
-      mapping: 'top',
-      inputPosition: 'bottom',
+      mapping: 'pathname',
+      inputPosition: 'top',
       lang: 'zh-CN',
       }, 
       {
