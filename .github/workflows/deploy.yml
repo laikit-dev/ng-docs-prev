@@ -46,6 +46,9 @@ jobs:
       - name: 安装 vue
         run: pnpm add -D vue
 
+      - name: 安装 vitepress-plugin-comment-with-giscus
+        run: pnpm add -D vitepress-plugin-comment-with-giscus
+
       - name: 使用 VitePress 构建
         run: |
           pnpm run docs:build
